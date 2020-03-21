@@ -1,0 +1,11 @@
+
+ios
+react-native run-ios --configuration=release
+build folder -> /Users/owner/Library/Developer/Xcode/DerivedData/relift-afumhhistyynslezgewdxqmylxsb/Build/Products/Release-iphonesimulator/
+Crete directory Payload
+copy build.app to payload
+compress the folder and change the name to app.ipa
+
+Android
+react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+./gradlew assembleDebug
